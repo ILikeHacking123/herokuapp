@@ -1,0 +1,15 @@
+<html>
+<head>
+  <script>
+  var n = prompt("Enter code: HumaN123")
+  if(n != "HumaN123") { // when wrong
+   alert("ERROR: Wrong code!")
+   window.close();
+  }else if(n == "HumaN123") { // when correct
+   alert("Authorize complete. Now we redirect you to Website's Autorize Page.")
+   let OauthURL = "https://proxy-yourweb.herokuapp.com/home" // redirect
+   window.location.replace(OauthURL)
+  }
+  </script>
+  </head>
+</html>
