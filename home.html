@@ -13,7 +13,7 @@
   </head>
   <body style="background-color:#000000">
     <center><h1> Hello! </center></h1>
-    <center><p> This is TUnblock, ready for unblock all pages :)</p></center>
+    <center><p> This is TUnblock, ready for unblock all school pages :)</p></center>
     <center><p> Be cool! </h1></center>
     <input id="urlEnter" type="url" value="Let's go!">
     <button onclick="go">Im done!</button>
@@ -22,7 +22,14 @@
       let enter = document.getElementById("urlEnter").value
 
       function go() {
-        if 
+        if (enter == null || enter = "") {
+          alert("Something went wrong... HTTP Request stopped")
+        } else {
+          globalThis.url = document.getElementById("urlEnter").value
+          window.location.href("proxy-yourweb.herokuapp.com/oauth2/index.html_" + url)
+        } else if (enter != "discord.com" || enter != "https://discord.com" || enter != "tinhte.vn" || enter != "github.com" || enter != "support.discord.com" || enter != "gist.github.com") { 
+          alert("Sorry, we not support them...")
+        }
       }
     </body>
 </html>
